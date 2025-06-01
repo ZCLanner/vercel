@@ -1,0 +1,528 @@
+{
+  "flights": {
+    "杭州到大阪": {
+      "error": "出现错误。我们已记录错误并将进行修复。",
+      "search_params": {
+        "from": "HGH",
+        "to": "KIX",
+        "date": "2025-08-02"
+      }
+    },
+    "大阪到冲绳": {
+      "search_params": {
+        "from": "KIX",
+        "to": "OKA",
+        "date": "2025-08-04",
+        "max_price": 1000
+      },
+      "total_found": 15,
+      "filtered_count": 2,
+      "flights": [
+        {
+          "stops": 0,
+          "segments": [
+            {
+              "flight_number": "MM215",
+              "from": "KIX",
+              "to": "OKA",
+              "departure": "2025-08-04T14:50:00",
+              "arrival": "2025-08-04T17:05:00",
+              "total_time": "2 hours 15 minutes"
+            }
+          ],
+          "total_time": "2 hours 15 minutes",
+          "price": {
+            "currency": "CNY",
+            "amount": 686.38
+          }
+        },
+        {
+          "stops": 0,
+          "segments": [
+            {
+              "flight_number": "GK357",
+              "from": "KIX",
+              "to": "OKA",
+              "departure": "2025-08-04T16:35:00",
+              "arrival": "2025-08-04T18:55:00",
+              "total_time": "2 hours 20 minutes"
+            }
+          ],
+          "total_time": "2 hours 20 minutes",
+          "price": {
+            "currency": "CNY",
+            "amount": 943.72
+          }
+        }
+      ]
+    },
+    "冲绳到上海": {
+      "search_params": {
+        "from": "OKA",
+        "to": "PVG",
+        "date": "2025-08-08",
+        "max_price": 1500
+      },
+      "total_found": 15,
+      "filtered_count": 1,
+      "flights": [
+        {
+          "stops": 0,
+          "segments": [
+            {
+              "flight_number": "9C6978",
+              "from": "OKA",
+              "to": "PVG",
+              "departure": "2025-08-08T15:00:00",
+              "arrival": "2025-08-08T16:25:00",
+              "total_time": "2 hours 25 minutes"
+            }
+          ],
+          "total_time": "2 hours 25 minutes",
+          "price": {
+            "currency": "CNY",
+            "amount": 1108.02
+          }
+        }
+      ]
+    }
+  },
+  "hotels": {
+    "大阪道顿堀": {
+      "search_params": {
+        "destination": "Dotonbori Osaka",
+        "arrival": "2025-08-02",
+        "departure": "2025-08-04",
+        "target_price": 600
+      },
+      "destination_info": {
+        "name": "Dotonbori",
+        "dest_id": "2829",
+        "search_type": "district"
+      },
+      "total_found": 20,
+      "suitable_count": 20,
+      "hotels": [
+        {
+          "hotel_id": 10513910,
+          "name": "Acro Capsule Hotel Namba Dotonbori",
+          "rating": 0,
+          "review_score": 8.6,
+          "review_count": 2090,
+          "location": {
+            "latitude": 34.668493976166,
+            "longitude": 135.499746783189
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 781.247063487402,
+            "price_per_night": 390.62
+          }
+        },
+        {
+          "hotel_id": 2133903,
+          "name": "Y's CABIN Osaka Namba",
+          "rating": 1,
+          "review_score": 8.4,
+          "review_count": 1219,
+          "location": {
+            "latitude": 34.6681548444484,
+            "longitude": 135.499644604351
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 845.107710547953,
+            "price_per_night": 422.55
+          }
+        },
+        {
+          "hotel_id": 1845289,
+          "name": "Capsule&Spa Grand Sauna Shinsaibashi",
+          "rating": 1,
+          "review_score": 7.8,
+          "review_count": 1565,
+          "location": {
+            "latitude": 34.6697660766775,
+            "longitude": 135.498760574847
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 428.425809009221,
+            "price_per_night": 214.21
+          }
+        },
+        {
+          "hotel_id": 697500,
+          "name": "Hostel Q",
+          "rating": 1,
+          "review_score": 7.8,
+          "review_count": 1454,
+          "location": {
+            "latitude": 34.6692529155819,
+            "longitude": 135.498598828917
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 302.418223164459,
+            "price_per_night": 151.21
+          }
+        },
+        {
+          "hotel_id": 3945685,
+          "name": "Azu Garden Nippombashi",
+          "rating": 2,
+          "review_score": 7.4,
+          "review_count": 852,
+          "location": {
+            "latitude": 34.6697495200271,
+            "longitude": 135.50602697686
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 897.174047101662,
+            "price_per_night": 448.59
+          }
+        },
+        {
+          "hotel_id": 13726679,
+          "name": "Capsule Hotel Asahi Plaza Shinsaibashi - Men's Only",
+          "rating": 1,
+          "review_score": 6.1,
+          "review_count": 328,
+          "location": {
+            "latitude": 34.670668968599,
+            "longitude": 135.49785071189
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 806.448586704719,
+            "price_per_night": 403.22
+          }
+        },
+        {
+          "hotel_id": 6279310,
+          "name": "Hostel Caranashi",
+          "rating": 0,
+          "review_score": 9.5,
+          "review_count": 234,
+          "location": {
+            "latitude": 34.662786,
+            "longitude": 135.547167
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 504.03036354026,
+            "price_per_night": 252.02
+          }
+        },
+        {
+          "hotel_id": 2021344,
+          "name": "Guest House Wa N Wa",
+          "rating": 1,
+          "review_score": 9.2,
+          "review_count": 264,
+          "location": {
+            "latitude": 34.6613415619219,
+            "longitude": 135.535416414715
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 619.957347154519,
+            "price_per_night": 309.98
+          }
+        }
+      ]
+    },
+    "上海南京路": {
+      "search_params": {
+        "destination": "Nanjing Road Shanghai",
+        "arrival": "2025-08-08",
+        "departure": "2025-08-09",
+        "target_price": 600
+      },
+      "destination_info": {
+        "name": "East Nanjing Road",
+        "dest_id": "259322",
+        "search_type": "landmark"
+      },
+      "total_found": 21,
+      "suitable_count": 10,
+      "hotels": [
+        {
+          "hotel_id": 7613461,
+          "name": "Dayin International Youth Hostel - Near East Nanjing Road & People's Square & The Bund -Large Social Area -Bar -Café -Gym -Free Laundry Luggage Storage -24H Front Desk -English Service",
+          "rating": 3,
+          "review_score": 8.6,
+          "review_count": 1319,
+          "location": {
+            "latitude": 31.2363996143545,
+            "longitude": 121.474897381962
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 209,
+            "price_per_night": 209.0
+          }
+        },
+        {
+          "hotel_id": 238173,
+          "name": "Seventh Heaven Hotel",
+          "rating": 3,
+          "review_score": 7.7,
+          "review_count": 1088,
+          "location": {
+            "latitude": 31.235324,
+            "longitude": 121.478661
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 477,
+            "price_per_night": 477.0
+          }
+        },
+        {
+          "hotel_id": 1934459,
+          "name": "Golden Tulip New Asia Hotel The Bund Shanghai",
+          "rating": 4,
+          "review_score": 8.8,
+          "review_count": 474,
+          "location": {
+            "latitude": 31.245107,
+            "longitude": 121.484859
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 600,
+            "price_per_night": 600.0
+          }
+        },
+        {
+          "hotel_id": 4672738,
+          "name": "Yitel Premium (Shanghai Nanjing Road Pedestrian Street)",
+          "rating": 4,
+          "review_score": 8.5,
+          "review_count": 152,
+          "location": {
+            "latitude": 31.2358062624854,
+            "longitude": 121.477999568332
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 665,
+            "price_per_night": 665.0
+          }
+        },
+        {
+          "hotel_id": 1395727,
+          "name": "Ji Hotel Shanghai The Bund Shandong Middle Road",
+          "rating": 3,
+          "review_score": 7.4,
+          "review_count": 17,
+          "location": {
+            "latitude": 31.23591,
+            "longitude": 121.484528
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 709,
+            "price_per_night": 709.0
+          }
+        },
+        {
+          "hotel_id": 12797600,
+          "name": "Jinjiang Inn Select Shanghai Nanjing Road Pedestrian Street",
+          "rating": 3,
+          "review_score": 0,
+          "review_count": 0,
+          "location": {
+            "latitude": 31.235424041748,
+            "longitude": 121.477699279785
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 500.729030109043,
+            "price_per_night": 500.73
+          }
+        },
+        {
+          "hotel_id": 351107,
+          "name": "Shanghai Fish Inn Bund",
+          "rating": 3,
+          "review_score": 8.1,
+          "review_count": 660,
+          "location": {
+            "latitude": 31.2409555654907,
+            "longitude": 121.483218222857
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 501.5001,
+            "price_per_night": 501.5
+          }
+        },
+        {
+          "hotel_id": 1163736,
+          "name": "Shanghai Fish Inn East Nanjing Road",
+          "rating": 2,
+          "review_score": 8.2,
+          "review_count": 486,
+          "location": {
+            "latitude": 31.2394259407169,
+            "longitude": 121.485357284546
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 589.05,
+            "price_per_night": 589.05
+          }
+        }
+      ]
+    },
+    "冲绳国际通": {
+      "search_params": {
+        "destination": "Kokusai Street Okinawa",
+        "arrival": "2025-08-04",
+        "departure": "2025-08-08",
+        "target_price": 600
+      },
+      "destination_info": {
+        "name": "Hotel Palm Royal Naha Kokusai Street",
+        "dest_id": "312177",
+        "search_type": "hotel"
+      },
+      "total_found": 20,
+      "suitable_count": 20,
+      "hotels": [
+        {
+          "hotel_id": 1940636,
+          "name": "The Kitchen Hostel Ao",
+          "rating": 1,
+          "review_score": 8.8,
+          "review_count": 2271,
+          "location": {
+            "latitude": 26.2136455235491,
+            "longitude": 127.677427768904
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 610.07835202913,
+            "price_per_night": 152.52
+          }
+        },
+        {
+          "hotel_id": 13310982,
+          "name": "HOTEL minimumms女性専用カプセルホテルWomen only hotel",
+          "rating": 0,
+          "review_score": 9.1,
+          "review_count": 142,
+          "location": {
+            "latitude": 26.2177385385474,
+            "longitude": 127.688413596187
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 692.277297801531,
+            "price_per_night": 173.07
+          }
+        },
+        {
+          "hotel_id": 4269075,
+          "name": "Grand Cabin Hotel Naha Oroku",
+          "rating": 3,
+          "review_score": 8.6,
+          "review_count": 2309,
+          "location": {
+            "latitude": 26.191795,
+            "longitude": 127.660568
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 891.468423386386,
+            "price_per_night": 222.87
+          }
+        },
+        {
+          "hotel_id": 5084496,
+          "name": "CABIN&HOTEL ReTIME",
+          "rating": 0,
+          "review_score": 8.6,
+          "review_count": 1152,
+          "location": {
+            "latitude": 26.2105920222177,
+            "longitude": 127.673550602634
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 564.514007165091,
+            "price_per_night": 141.13
+          }
+        },
+        {
+          "hotel_id": 3119704,
+          "name": "Y's CABIN&HOTEL Naha Kokusai Street",
+          "rating": 2,
+          "review_score": 8.6,
+          "review_count": 3489,
+          "location": {
+            "latitude": 26.214574332821,
+            "longitude": 127.681453661377
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 797.250032570109,
+            "price_per_night": 199.31
+          }
+        },
+        {
+          "hotel_id": 2268522,
+          "name": "ラナイ ホテルアンドドミトリー",
+          "rating": 2,
+          "review_score": 8.8,
+          "review_count": 137,
+          "location": {
+            "latitude": 26.2187725535458,
+            "longitude": 127.693244218827
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 635.078263101031,
+            "price_per_night": 158.77
+          }
+        },
+        {
+          "hotel_id": 369207,
+          "name": "Minshuku Getto",
+          "rating": 2,
+          "review_score": 8.6,
+          "review_count": 829,
+          "location": {
+            "latitude": 26.2126298460063,
+            "longitude": 127.68318593502
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 624.997650789922,
+            "price_per_night": 156.25
+          }
+        },
+        {
+          "hotel_id": 8090175,
+          "name": "CABIN&HOTEL CONSTANT NAHA",
+          "rating": 0,
+          "review_score": 8.3,
+          "review_count": 532,
+          "location": {
+            "latitude": 26.212653,
+            "longitude": 127.689245
+          },
+          "price": {
+            "currency": "CNY",
+            "amount": 727.69383736125,
+            "price_per_night": 181.92
+          }
+        }
+      ]
+    }
+  },
+  "search_timestamp": "2025-05-27T22:52:44.227639"
+}

@@ -1,0 +1,94 @@
+{
+  "HGH → KIX": {
+    "total_found": 15,
+    "under_budget": 13,
+    "best_options": [
+      {
+        "stops": 0,
+        "segments": [
+          {
+            "flight_number": "SC4766",
+            "from": "HGH",
+            "to": "TAO",
+            "departure": "2025-08-02T10:45:00",
+            "arrival": "2025-08-02T12:40:00",
+            "total_time": "1 小时 55 分钟"
+          },
+          {
+            "flight_number": "SC4095",
+            "from": "TAO",
+            "to": "KIX",
+            "departure": "2025-08-02T17:20:00",
+            "arrival": "2025-08-02T21:00:00",
+            "total_time": "2 小时 40 分钟"
+          }
+        ],
+        "total_time": "4 小时 35 分钟",
+        "price": {
+          "currency": "CNY",
+          "amount": 1188.33
+        }
+      },
+      {
+        "stops": 0,
+        "segments": [
+          {
+            "flight_number": "SC4766",
+            "from": "HGH",
+            "to": "TAO",
+            "departure": "2025-08-02T10:45:00",
+            "arrival": "2025-08-02T12:40:00",
+            "total_time": "1 小时 55 分钟"
+          },
+          {
+            "flight_number": "SC4091",
+            "from": "TAO",
+            "to": "KIX",
+            "departure": "2025-08-03T08:00:00",
+            "arrival": "2025-08-03T11:25:00",
+            "total_time": "2 小时 25 分钟"
+          }
+        ],
+        "total_time": "4 小时 20 分钟",
+        "price": {
+          "currency": "CNY",
+          "amount": 1188.33
+        }
+      },
+      {
+        "stops": 0,
+        "segments": [
+          {
+            "flight_number": "MF8707",
+            "from": "HGH",
+            "to": "KIX",
+            "departure": "2025-08-02T14:35:00",
+            "arrival": "2025-08-02T18:15:00",
+            "total_time": "2 小时 40 分钟"
+          }
+        ],
+        "total_time": "2 小时 40 分钟",
+        "price": {
+          "currency": "CNY",
+          "amount": 1441.29
+        }
+      }
+    ]
+  },
+  "HGH → ITM": {
+    "error": "Something went wrong. We have logged the error and will get the resolution."
+  },
+  "HGH → NRT": {
+    "total_found": 15,
+    "under_budget": 0,
+    "best_options": []
+  },
+  "SHA → KIX": {
+    "total_found": 15,
+    "under_budget": 0,
+    "best_options": []
+  },
+  "PVG → KIX": {
+    "error": "Something went wrong. We have logged the error and will get the resolution."
+  }
+}
