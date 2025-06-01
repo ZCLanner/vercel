@@ -15,6 +15,50 @@ const VisaSlide: React.FC = () => {
         <div className="w-20 h-1 bg-blue-500 mt-2"></div>
       </motion.div>
 
+      {/* Visit Japan Web Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+        className="mb-8"
+      >
+        <div className="bg-gradient-to-r from-red-50 to-blue-50 rounded-lg p-6 shadow-sm border border-gray-100">
+          <div className="flex items-start space-x-4">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-lg">VJW</span>
+              </div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-red-700 mb-3">Visit Japan Web - 入境数字化服务</h3>
+              <p className="text-gray-700 mb-4">
+                日本政府官方推出的数字化入境服务，可提前完成入境审查、海关申报等手续，大幅缩短入境等待时间。
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-white rounded-lg p-4 shadow-sm">
+                  <h4 className="font-bold text-blue-600 mb-2">📱 在线办理</h4>
+                  <p className="text-sm text-gray-700">入境前14天内，通过Visit Japan Web网站或APP完成注册</p>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-sm">
+                  <h4 className="font-bold text-blue-600 mb-2">⚡ 快速通关</h4>
+                  <p className="text-sm text-gray-700">使用二维码快速通过入境审查和海关检查</p>
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-sm">
+                  <h4 className="font-bold text-blue-600 mb-2">📋 免填表格</h4>
+                  <p className="text-sm text-gray-700">无需在飞机上填写纸质入境卡和海关申报表</p>
+                </div>
+              </div>
+              <div className="mt-4 p-3 bg-yellow-100 rounded-lg">
+                <p className="text-sm text-yellow-800">
+                  <strong>官方网站：</strong> <span className="font-mono">www.vjw.digital.go.jp</span><br/>
+                  <strong>建议：</strong> 出发前48小时完成注册，避免入境排队
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left content */}
         <motion.div

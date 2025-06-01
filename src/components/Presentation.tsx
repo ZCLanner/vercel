@@ -55,25 +55,26 @@ const Presentation: React.FC = () => {
     // 8: 行程景点目录页
     <ItineraryAttractionsTableOfContents key="itinerary-attractions-toc" onNavigate={navigateToSlide} />,
     
-    // 9-17: 行程概览和景点介绍
+    // 9-18: 行程概览和景点介绍
     <ItineraryOverviewSlide key="itinerary" />,
     <USJGuideSlide key="usj-guide" />,
     <AttractionSlide key="attraction-aquarium" attraction="aquarium" />,
-    <AttractionSlide key="attraction-american" attraction="american" />,
     <AttractionSlide key="attraction-manzamo" attraction="manzamo" />,
     <AttractionSlide key="attraction-kouri" attraction="kouri" />,
     <AttractionSlide key="attraction-chinen-cape" attraction="chinen_cape" />,
     <AttractionSlide key="attraction-okinawa-world" attraction="okinawa_world" />,
     <AttractionSlide key="attraction-senagajima" attraction="senagajima" />,
     <AttractionSlide key="attraction-tokashiki" attraction="tokashiki" />,
+    <AttractionSlide key="attraction-seafood-market" attraction="seafood_market" />,
     <AttractionSlide key="attraction-dotonbori" attraction="dotonbori" />,
+    <AttractionSlide key="attraction-american" attraction="american" />,
     <AttractionSlide key="attraction-kokusai" attraction="kokusai" />,
     <AttractionSlide key="attraction-bund" attraction="bund" />,
     
-    // 18: 每日行程目录页
+    // 19: 每日行程目录页
     <DailyPlansTableOfContents key="daily-plans-toc" onNavigate={navigateToSlide} />,
     
-    // 19-26: 每日详细行程
+    // 20-27: 每日详细行程
     <DailyPlanSlide key="day1" day={1} />,
     <DailyPlanSlide key="day2" day={2} />,
     <DailyPlanSlide key="day3" day={3} />,
@@ -83,7 +84,7 @@ const Presentation: React.FC = () => {
     <DailyPlanSlide key="day7" day={7} />,
     <DailyPlanSlide key="day8" day={8} />,
     
-    // 27: 结尾页
+    // 28: 结尾页
     <FinaleSlide key="finale" />,
   ];
 
@@ -307,9 +308,9 @@ const Presentation: React.FC = () => {
           <div className="bg-blue-500/80 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs text-center">
             {currentSlide === 1 && "📋 主目录"}
             {currentSlide >= 2 && currentSlide <= 7 && "✈️ 出行准备"}
-            {currentSlide >= 8 && currentSlide <= 17 && "🏖️ 行程景点"}
-            {currentSlide >= 18 && currentSlide <= 26 && "📅 每日安排"}
-            {currentSlide === 27 && "🎉 结尾"}
+            {currentSlide >= 8 && currentSlide <= 18 && "🏖️ 行程景点"}
+            {currentSlide >= 19 && currentSlide <= 27 && "📅 每日安排"}
+            {currentSlide === 28 && "🎉 结尾"}
           </div>
         )}
       </div>

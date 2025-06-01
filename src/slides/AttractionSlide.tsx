@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 interface AttractionSlideProps {
-  attraction: 'aquarium' | 'american' | 'tokashiki' | 'okinawa_world' | 'dotonbori' | 'kokusai' | 'bund' | 'manzamo' | 'kouri' | 'chinen_cape' | 'senagajima';
+  attraction: 'aquarium' | 'american' | 'tokashiki' | 'okinawa_world' | 'dotonbori' | 'kokusai' | 'bund' | 'manzamo' | 'kouri' | 'chinen_cape' | 'senagajima' | 'seafood_market';
 }
 
 const AttractionSlide: React.FC<AttractionSlideProps> = ({ attraction }) => {
@@ -294,8 +294,112 @@ const AttractionSlide: React.FC<AttractionSlideProps> = ({ attraction }) => {
         '与万座毛可安排在同一天游览'
       ]
     },
+    seafood_market: {
+      title: '冲绳第一牧志公设市场',
+      description: '冲绳最著名的传统海鲜市场，被誉为"冲绳的厨房"。这里汇集了新鲜的当地海产品，游客可以购买海鲜并在二楼的食堂现场加工享用，体验最正宗的冲绳海鲜文化。',
+      highlights: [
+        '新鲜海鲜：各种冲绳特色海产，包括龙虾、海胆、海葡萄',
+        '现买现做：一楼购买海鲜，二楼加工享用的独特体验',
+        '冲绳特产：海葡萄、紫薯、黑糖等当地特色食材',
+        '传统文化：体验冲绳传统市场的热闹氛围',
+        '经济实惠：相比餐厅价格更加亲民的海鲜享用方式'
+      ],
+      info: {
+        位置: '那霸市松尾，国际通附近',
+        开放时间: '上午8:00 - 下午9:00（周日休息）',
+        门票: '免费（食物单独付费）',
+        交通时间: '从国际通步行5分钟',
+        建议游览时间: '1-2小时'
+      },
+      imagePath: '/imgs/kokusai_street.jpg',
+      tips: [
+        '早上到达可选择最新鲜的海鲜',
+        '二楼食堂加工费用约¥300-500每道菜',
+        '可以砍价，特别是购买多种海鲜时',
+        '推荐尝试冲绳特色海葡萄和海胆',
+        '周日休息，请安排好游览时间'
+      ]
+    },
   };
 
+  // 美食推荐数据
+  const foodRecommendations = {
+    dotonbori: [
+      {
+        name: '达摩串炸（難波本店）',
+        dish: '各类炸物，搭配秘传酱汁，牛肉串炸',
+        price: '¥1000-2000',
+        rating: '4.0/5',
+        feature: '创立于昭和4年，100%牛脂炸油，外衣细腻酥脆'
+      },
+      {
+        name: '金久右卫门拉面',
+        dish: '4号「大阪黑」拉面，湯头濃厚回甘',
+        price: '¥800-1500',
+        rating: '4.2/5',
+        feature: 'tabelog「大阪最强拉面」比赛连续3年冠军'
+      },
+      {
+        name: '蟹道乐本店',
+        dish: '顶级松叶蟹、鱈场蟹料理，螃蟹火锅',
+        price: '¥5000-15000',
+        rating: '4.1/5',
+        feature: '高档螃蟹料理专门店，以巨大螃蟹招牌闻名'
+      }
+    ],
+    american: [
+      {
+        name: 'グルメ回转寿司市场',
+        dish: '产地直送新鲜鱼货，海葡萄、石垣牛寿司',
+        price: '¥110-500/盘',
+        rating: '4.2/5',
+        feature: '美国村人气Top1餐厅，CP值超高'
+      },
+      {
+        name: '塔可饭咖啡Kijimuna',
+        dish: '蛋包塔可饭（年销10万份）',
+        price: '¥800-1200',
+        rating: '4.3/5',
+        feature: '冲绳塔可饭发源地，融合美式和冲绳风味'
+      }
+    ],
+    kokusai: [
+      {
+        name: '暖暮拉面',
+        dish: '台湾人最爱No.1冲绳拉面，豚骨拉面',
+        price: '¥800-1500',
+        rating: '4.1/5',
+        feature: '冲绳拉面代表店，汤头浓郁有层次'
+      },
+      {
+        name: '琉球茶房 あしびうなぁ',
+        dish: '冲绳传统料理，ゴーヤチャンプルー',
+        price: '¥1200-2000',
+        rating: '4.2/5',
+        feature: '正宗冲绳家庭料理，传统琉球风味'
+      }
+    ],
+    bund: [
+      {
+        name: 'Hakkasan 客家轩',
+        dish: '现代粤菜，蒜子黑椒、玫瑰豉油鸡、宫爆松露',
+        price: '¥700-1500/人',
+        rating: '4.5/5',
+        feature: '米其林星级餐厅，现代粤菜典范'
+      },
+      {
+        name: '外滩22号 Restaurant',
+        dish: '法式精致料理，景观位用餐',
+        price: '¥500-1200/人',
+        rating: '4.3/5',
+        feature: '外滩景观餐厅，法式浪漫用餐体验'
+      }
+    ]
+  };
+
+  // 判断是否为商业景点
+  const isCommercialArea = ['dotonbori', 'american', 'kokusai', 'bund'].includes(attraction);
+  
   const selected = attractions[attraction];
 
   return (
@@ -399,6 +503,47 @@ const AttractionSlide: React.FC<AttractionSlideProps> = ({ attraction }) => {
             </div>
           </motion.div>
         </div>
+
+        {/* 美食推荐部分 - 仅商业景点显示 */}
+        {isCommercialArea && foodRecommendations[attraction as keyof typeof foodRecommendations] && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.6 }}
+            className="mt-8"
+          >
+            <div className="bg-gradient-to-r from-orange-50 to-red-50 rounded-lg p-6 shadow-sm border border-orange-100">
+              <h3 className="text-2xl font-bold text-orange-700 mb-4 flex items-center">
+                <span className="mr-2">🍽️</span>
+                美食推荐
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {foodRecommendations[attraction as keyof typeof foodRecommendations]?.map((restaurant, index) => (
+                  <div key={index} className="bg-white rounded-lg p-4 shadow-sm border border-orange-200">
+                    <h4 className="font-bold text-orange-800 mb-2">{restaurant.name}</h4>
+                    <div className="space-y-2 text-sm">
+                      <div>
+                        <span className="font-semibold text-gray-600">招牌菜品：</span>
+                        <span className="text-gray-700">{restaurant.dish}</span>
+                      </div>
+                      <div>
+                        <span className="font-semibold text-gray-600">价格：</span>
+                        <span className="text-gray-700">{restaurant.price}</span>
+                      </div>
+                      <div>
+                        <span className="font-semibold text-gray-600">评分：</span>
+                        <span className="text-orange-600 font-medium">{restaurant.rating}</span>
+                      </div>
+                      <div className="mt-2 text-xs text-gray-600 bg-gray-50 p-2 rounded">
+                        {restaurant.feature}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        )}
       </div>
     </div>
   );
